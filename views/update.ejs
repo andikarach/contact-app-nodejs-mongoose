@@ -12,7 +12,7 @@
 				</div>
 			<% } %>
 			
-			<form action="/contact/edit" method="POST">
+			<form action="/contact/update/<%- contact._id %>" method="POST">
 			  <div class="mb-3">
 			    <label class="form-label">Nama</label>
 			    <input type="text" class="form-control" name="nama" value="<%= contact.name %>">
