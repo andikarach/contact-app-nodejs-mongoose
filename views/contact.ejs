@@ -32,11 +32,11 @@
 			  	<% contacts.forEach((con, i) => { %>
 			    <tr>
 			      <th scope="row"><%= i+1%></th>
-			      <td><%= con.nama %></td>
+			      <td><%= con.name %></td>
 			      <td><%= con.noHP %></td>
 			      <td>
-				      <a href="/contact/<%= con.email %>" class="btn btn-outline-success">Detail</a>
-				      <a href="/contact/delete/<%= con.email %>" class="btn btn-outline-danger">Delete</a>
+				      <a href="/contact/update/<%= con._id %>" class="btn btn-outline-success">Detail</a>
+				      <a href="/contact/delete/<%= con._id %>" class="btn btn-outline-danger">Delete</a>
 			      </td>
 			    </tr>
 			    <% }) %>

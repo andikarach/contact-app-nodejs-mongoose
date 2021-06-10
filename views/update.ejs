@@ -15,7 +15,7 @@
 			<form action="/contact/edit" method="POST">
 			  <div class="mb-3">
 			    <label class="form-label">Nama</label>
-			    <input type="text" class="form-control" name="nama" value="<%= contact.nama %>">
+			    <input type="text" class="form-control" name="nama" value="<%= contact.name %>">
 			  </div>
 			  <div class="mb-3">
 			    <label class="form-label">No HP</label>
@@ -24,8 +24,8 @@
 			  <div class="mb-3">
 			    <label class="form-label">Email</label>
 			    <input type="text" class="form-control" name="email" value="<%= contact.email %>">
-			    <input type="hidden" name="oldEmail" value="<%= contact.oldEmail || contact.email %>">
 			  </div>
+			  <input type="hidden" name="id" value="<%= contact._id %>">
 			  <a href="/contact" class="btn btn-warning">Back</a>
 			  <button type="submit" class="btn btn-primary">Save</button>
 			</form>
