@@ -1,0 +1,15 @@
+---
+application:
+  name: "contact-app-nodejs-mongoose"
+  project: "app-contact-nodejs-mongoose"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "myFirstDatabase"
+  version: "3.6"
+routers:
+- name: "main-contact-app-nodejs-mongoose"
+  routes:
+  - application_name: "contact-app-nodejs-mongoose"
+    paths:
+    - "/*"
